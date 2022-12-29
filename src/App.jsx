@@ -1,32 +1,34 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="app">
+     
+      <div className='wrapper'>
+        <div id='display' className='calcScreen'>sd</div>
+        <div id='display' className='inputScreen'>sd</div>
+        <div className='container'>
+          <button className='grid-item item-a' id='clear'>C</button>
+          <button className='grid-item' id='divide'>/</button>
+          <button className='grid-item' id='multiply'>x</button>
+          <button className='grid-item' id='seven'>7</button>
+          <button className='grid-item' id='nine'>9</button>
+          <button className='grid-item' id='eight'>8</button>
+          <button className='grid-item' id='subtract'>-</button>
+          <button className='grid-item' id='four'>4</button>
+          <button className='grid-item' id='five'>5</button>
+          <button className='grid-item' id='six'>6</button>
+          <button className='grid-item' id='add'>+</button>
+          <button className='grid-item' id='one'>1</button>
+          <button className='grid-item' id='two'>2</button>
+          <button className='grid-item' id='three'>3</button>          
+          <button className='grid-item item-a' id='zero'>0</button>
+          <button className='grid-item item-b' id='equals'>=</button>          
+          <button className='grid-item' id='decimal'>.</button>          
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </div>
   )
 }

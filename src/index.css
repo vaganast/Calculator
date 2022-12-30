@@ -20,6 +20,20 @@
   padding: 5px;  
 }
 
+.inputScreen {
+  display: flex;  
+  justify-content: flex-end;
+  font-size: 1.5em; 
+  height: 40px; 
+}
+
+.calcScreen {
+  display: flex;  
+  justify-content: flex-end;
+  font-size: 1.2em;  
+  height: 40px;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

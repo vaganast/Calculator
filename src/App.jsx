@@ -1,6 +1,5 @@
 import { useState } from 'react'
 
-
 function App() {
 const [display, setDisplay] = useState('0')
 const [total, setTotal] = useState('')
@@ -11,10 +10,7 @@ const handleNumber = (e) => {
     setDisplay(number)
   } else {
     setDisplay(display + number)
-  } if (total) {
-    setDisplay(number)
-    setTotal('')
-  }
+  } 
 }
 
 const handleOperation = (e) => {
@@ -25,7 +21,7 @@ const handleOperation = (e) => {
     setDisplay(display + ' ' + operator + ' ')
   } if (display == '0') {
     setDisplay(operator)
-  }
+  } 
 }
 
 const handleCalc = () => {

@@ -14,7 +14,7 @@ const handleNumber = (e) => {
 }
 
 const handleOperation = (e) => {
-  const operator = e.target.textContent
+  const operator = e.target.textContent  
   if (total) {    
     setDisplay(total + ' ' + operator + ' ')    
   } else{
@@ -34,10 +34,8 @@ const handleClear = () => {
 }
 
 const handleDecimal = () => {
- const arr = display.split(' ')
- console.log(arr);
+ const arr = display.split(' ') 
  const lastNumb = arr[arr.length - 1]
- console.log(lastNumb);
   if (!lastNumb.includes('.')){
     setDisplay(display + '.')
   }
